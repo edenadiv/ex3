@@ -1,0 +1,442 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiko', sans-serif;
+}
+
+section, aside, main, article, footer, header, nav {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* ---------------- */
+
+/* MIX Page start */
+
+header {
+    width: 100vw;
+    height: calc(123/1024*100vh);
+    background-color: #FFF3E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: calc(291/1440*100vw);
+    justify-content: space-between;
+    display: flex;
+}
+
+nav section a {
+    font-weight: 400;
+    font-size: calc(24/1440*100vw);
+}
+
+nav section section {
+    display: flex;
+    justify-content: center;
+}
+
+/* .ball {
+    opacity: 0;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 10rem;
+    background-color: #E74646;
+}
+
+nav section:hover .ball{    
+    opacity: 1;
+} */
+
+.ball {
+    opacity: 0;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 10rem;
+    background-color: #E74646;
+}
+
+nav section:hover .ball{    
+    opacity: 1;
+}
+
+main {
+    width: 100vw;
+    height: calc(860/1024*100vh);
+}
+
+main > section:only-child {
+    margin-top: calc(91/1024*100vh);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: calc(881/1440*100vw);
+    height: calc(624/1024*100vh);
+}
+
+main > section:only-child > section {
+    width: calc(444/1440*100vw);
+    height: calc(624/1024*100vh);
+}
+
+/* mix spacer-1 */
+main > section:only-child > section > section:first-child {
+    width: calc(374/1440*100vw);
+    height: calc(176/1024*100vh);
+}
+
+main > section:only-child > section > section:nth-child(2) {
+    width: calc(374/1440*100vw);
+    height: calc(125/1024*100vh);
+}
+
+/* a */
+main > section:only-child > section > section:nth-child(2) a {
+    font-weight: 700;
+    font-size: 4.5rem;
+    letter-spacing: 0.8rem;
+    margin-left: 0;
+    width: calc(274/1440*100vw);
+    height: calc(97/1024*100vh);
+}
+
+/* second sentence */
+main > section:only-child > section > section:nth-child(2) > section:last-child {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* mix spacer-2 */
+main > section:only-child > section > section:nth-child(3) {
+    width: calc(374/1440*100vw);
+    height: calc(323/1024*100vh);
+}
+
+/* Rectangles */
+div {
+    background-color: #FA9884;
+}
+
+/* define rectangles and containers */
+
+/* col2-c2-r2 - rectangle */
+main > section:only-child > article > article > article > section > div {
+    margin-top: calc(7/1024*100vh);
+    width: calc(110/1440*100vw);
+    height: calc(58/1024*100vh);
+}
+
+/* col2-c2-c2-c1-r2 - rectangle */
+main > section:only-child > article > article > article > section > section > div:last-child {
+    margin-left: calc(41/1440*100vw);
+    width: calc(55/1440*100vw);
+    height: calc(105/1024*100vh);
+}
+
+/* col2-c2-c2-c1-r1 -rectangle */
+main > section:only-child > article > article > article > section > section > div:first-child{
+    width: calc(55/1440*100vw);
+    height: calc(105/1024*100vh);
+}
+
+/* col2-c2-c2-c1 - container */
+main > section:only-child > article > article > article > section > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* col2-c2-c2 - container */
+main > section:only-child > article > article > article > section {
+    margin-left: calc(14/1440*100vw);
+    display: flex;
+    flex-direction: column;
+}
+
+/* col2-c2-r1 - rectangle */
+main > section:only-child > article > article > article > div {
+    width: calc(123/1440*100vw);
+    height: calc(212/1024*100vh);
+}
+
+/* col2-c2 - container */
+main > section:only-child > article > article > article {
+    display: flex;
+    flex-direction: row;
+    margin-top: calc(16/1024*100vh);
+    width: calc(290/1440*100vw);
+    height: calc(212/1024*100vh);
+}
+
+/* col2-c1-c2-r4 - rectangle */
+main section:only-child > article > article > section > section > div:nth-child(4) {
+    width: calc(28/1440*100vw);
+    height: calc(198/1024*100vh);
+}
+
+/* col2-c1-c2-r3 - rectangle */
+main > section:only-child > article > article > section > section > div:nth-child(3) {
+    width: calc(28/1440*100vw);
+    height: calc(55/1024*100vh);
+}
+
+/* col2-c1-c2-r2 - rectangle */
+main > section:only-child > article > article > section > section > div:nth-child(2){
+    width: calc(28/1440*100vw);
+    height: calc(55/1024*100vh);
+}
+
+/* col2-c1-c2-r1 - rectangle */
+main > section:only-child > article > article > section > section > div:first-child {
+    width: calc(28/1440*100vw);
+    height: calc(55/1024*100vh);
+}
+
+/* col2-c1-c2 - container */
+main > section:only-child > article > article > section > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(28/1440*100vw);
+    height: calc(396/1024*100vh);
+}
+
+/* col2-c1-r1 - rectangle */
+main > section:only-child > article > article > section > div {
+    margin-top: calc(44/1024*100vh);
+    width: calc(246/1440*100vw);
+    height: calc(352/1024*100vh);
+}
+
+/* col2-c1 - container */
+main > section:only-child > article > article > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(290/1440*100vw);
+    height: calc(396/1024*100vh);
+}
+
+/* col2 - container */
+main > section:only-child > article > article {
+    display: flex;
+    flex-direction: column;
+    width: calc(288/1440*100vw);
+    height: calc(624/1024*100vh);
+}
+
+/* col1-c4-c2-r2 - rectangle */
+main > section:only-child > article > section > section > section > div:last-child {
+    margin-top: calc(7/1024*100vh);
+    margin-left: calc(7/1024*100vh);
+    width: calc(25/1440*100vw);
+    height: calc(26/1024*100vh);
+}
+
+/* col1-c4-c2-r1 - rectangle */
+main > section:only-child > article > section > section > section > div:first-child {
+    margin-top: calc(7/1024*100vh);
+    width: calc(25/1440*100vw);
+    height: calc(26/1024*100vh);
+}
+
+/* col1-c4-c2 - container */
+main > section:only-child > article > section > section > section {
+    display: flex;
+    flex-direction: row;
+}
+
+/* col1-c4-r1 - rectangle */
+main > section:only-child > article > section > section > div:first-child {
+    width: calc(88/1440*100vw);
+    height: calc(28/1024*100vh);
+}
+
+/* col1-c4 - container */
+main > section:only-child > article > section > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(8/1024*100vh);
+    width: calc(134/1440*100vw);
+    height: calc(88/1024*100vh);
+}
+
+/* col1-r3 - rectangle */
+main > section:only-child > article > section > div:nth-child(3) {
+    margin-top: calc(11/1024*100vh);
+    width: calc(134/1440*100vw);
+    height: calc(404/1024*100vh);
+}
+
+/* col1-r2 - rectangle */
+main > section:only-child > article > section > div:nth-child(2) {
+    margin-top: calc(8/1024*100vh);
+    width: calc(136/1440*100vw);
+    height: calc(46/1024*100vh);
+}
+
+/* col1-r1 - rectangle */
+main > section:only-child > article > section > div:first-child {
+    margin-top: calc(44/1024*100vh);
+    width: calc(75/1440*100vw);
+    height: calc(23/1024*100vh);
+}
+
+/* col1 - container */
+main > section:only-child > article > section {
+    width: calc(136/1440*100vw);
+    height: calc(624/1024*100vh);
+}
+
+/* container */
+main > section:only-child > article {
+    display: flex;
+    justify-content: space-between;
+    width: calc(437/1440*100vw);
+    height: calc(624/1024*100vh);
+}
+
+/* ---------------------- */
+
+footer {
+    width: 100vw;
+    height: calc(41/1024*100vh);
+    background-color: #FFE5CA;
+}
+
+/* MIX Page end */
+
+/* Layout 2 page start */
+
+/* wrapper */
+
+main > article {
+    display: flex;
+    width: 100vw;
+}
+
+main > article > section {
+    width: calc(1271/1440*100vw);
+}
+
+main > article > section > section {
+    width: calc(969/1440*100vw);
+    margin: calc(119/2024*100vh) auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > article > section > section > section:first-child {
+    width: calc(457/1440*100vw);
+}
+
+main > article > section > section > section:last-child {
+    margin-top: calc(168/2024*100vh);
+    width: calc(457/1440*100vw);
+}
+
+main > article > section > section > section:first-child section {
+    width: calc(457/1440*100vw);
+    height: calc(299/2024*100vh);
+    margin-top: calc(70/2024*100vh);
+    background-color: #FA9884;
+}
+
+main > article > section > section > section:last-child section {
+    width: calc(457/1440*100vw);
+    height: calc(299/2024*100vh);
+    margin-top: calc(70/2024*100vh);
+    background-color: #FA9884;
+}
+
+aside {
+    width: calc(169/1440*100vw);
+    height: calc(1925/2024*100vh);
+    background-color: #FFE5CA;
+    color: #FA9884;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+aside > section {
+    width: 100%;
+}
+
+aside > section > section:first-child {
+    width: calc(80/1440*100vw);
+    height: calc(80/2024*100vh);
+    margin-top: calc(119/2024*100vh);
+    background-color: #000;
+}
+
+aside > section > section:nth-child(2) {
+    width: calc(80/1440*100vw);
+    height: calc(80/2024*100vh);
+    margin-top: calc(48/2024*100vh);
+    margin-left: calc(89/1440*100vw);
+    background-color: #fff;
+}
+
+aside > section > section:last-child {
+    width: calc(80/1440*100vw);
+    height: calc(80/2024*100vh);
+    margin-top: calc(289/2024*100vh);
+    background-color: #000;
+}
+
+aside > article {
+    width: calc(81/1440*100vw);
+    height: calc(641/2024*100vh);
+    margin-top: calc(544/2024*100vh);
+    font-weight: 400;
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+aside > article > a:hover {
+    color: #FA9884;
+}
+
+/* Layout 2 page end */
+
+/* Layout 3 page start */
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .layout3 {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightblue;
+    }
+}
+
+/* > mobile */
+
+@media only screen and (min-width: 768px) {
+    .layout3  {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightblue;
+    }
+}
+
+/* Layout 3 page end */
