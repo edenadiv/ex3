@@ -421,14 +421,70 @@ aside > article > a:hover {
 /* Layout 3 page start */
 
 /* mobile */
-@media only screen and (max-width: 767px) {
-    
+@media only screen and (max-width: 850px) {
+    .layout3 {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .layout3 > header {
+        width: 100vw;
+        height: calc(123/2024*100vh);
+        background-color: #FFF3E2;
+    }
+
+    .layout3 > header > section {
+        width: calc(80/850*100vw);
+        height: calc(80/850*100vw);
+        background-color: #000;
+        margin-left: calc(744/850*100vw);
+        margin-top: calc(21/2024*100vh);
+    }
+
+    .layout3 > main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout3 > main > aside > nav {
+        width: 100vw;
+        height: calc(105/2024*100vh);
+        background-color: #FFE5CA;
+        position: relative;
+        justify-content:center;
+    }
+
+    .layout3 > main > aside > nav > section:nth-child(2) {
+        margin-left: calc(18/850*100vw);
+        margin-right: calc(17/850*100vw);
+    }
+
+    .layout3 > main > aside {
+        display: contents;
+    }
+
+    .layout3 > main > section {
+        width: 100vw;
+        height: calc(1346/2024*100vh);
+    }
+
+    .layout3 > section {
+        width: 100vw;
+        height: calc(409/2024*100vh);
+        background-color: #E74646;
+    }
+
+    .layout3 > footer {
+        width: 100vw;
+        height: calc(41/2024*100vh);
+        background-color: #FA9884;
+    }
 
 }
 
 /* > mobile */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 851px) {
     .layout3 {
         width: 100vw;
         height: 100vh;
@@ -442,8 +498,8 @@ aside > article > a:hover {
     }
 
     .layout3 > header > section {
-        width: calc(80/1624*100vh);
-        height: calc(80/1624*100vh);
+        width: calc(80/1440*100vw);
+        height: calc(80/1440*100vw);
         background-color: #000;
         margin-left: calc(1336/1440*100vw);
         margin-top: calc(21/1624*100vh);
