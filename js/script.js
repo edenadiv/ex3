@@ -53,12 +53,10 @@ function handleClick(e) {
         rec2 = undefined;
         rec1 = e;
         clicks += 1
-        // rec1.target.classList.add('selected');
         rec1.target.style.backgroundColor = '#FA9884';
         rec1.target.style.color = '#fff';
     }
     else {
-        // if(rec1==e) alert('!!!');
         rec2 = e;
         clicks = 0;
         rec2.target.style.backgroundColor = '#FA9884';
@@ -69,8 +67,6 @@ function handleClick(e) {
 
 function checkPair(e) {
     if (rec1.target.innerHTML == rec2.target.innerHTML) {
-        console.log(rec1.target.innerHTML);
-        console.log(rec2.target.innerHTML);
         rec1.target.style.backgroundColor = `#0E4732`;
         rec1.target.style.color = `#ffddaa`;
         rec2.target.style.backgroundColor = `#0E4732`;
